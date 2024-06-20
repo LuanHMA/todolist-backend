@@ -1,0 +1,27 @@
+###
+GET http://localhost:3333/get-todos
+
+###
+POST http://localhost:3333/add-todo
+Content-Type: application/json
+
+{
+    "title": "Testando add todo dnv"
+}
+
+###
+POST http://localhost:3333/remove-todo
+Content-Type: application/json
+
+{
+    "id": 2
+}
+
+###
+POST http://localhost:3333/update-todo
+Content-Type: application/json
+
+{
+    "id": 3,
+    "checked": 1
+}
